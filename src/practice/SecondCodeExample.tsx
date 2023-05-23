@@ -5,7 +5,7 @@ import { CardData, CardDataType } from "../data/CardData";
 const SecondCodeExample = () => {
   const renderCard = (item: CardDataType) => {
     return (
-      <View style={styles.card}>
+      <View key={item.id} style={styles.card}>
         <Image
           source={{
             uri: item.uri,
@@ -52,7 +52,6 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: 200,
-    backgroundColor: "red",
   },
   button: {
     width: "80%",
