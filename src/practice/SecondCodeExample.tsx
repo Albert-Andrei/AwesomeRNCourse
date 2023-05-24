@@ -27,7 +27,12 @@ const SecondCodeExample = () => {
 
   return (
     <View style={styles.container}>
-      <Deck data={CardData} renderCard={renderCard} />
+      <Deck
+        data={CardData}
+        renderCard={renderCard}
+        onSwipeLeft={() => {}}
+        onSwipeRight={() => {}}
+      />
     </View>
   );
 };
@@ -44,6 +49,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderColor: "grey",
     marginVertical: 10,
+    backgroundColor: "white",
   },
   content: {
     padding: 10,
