@@ -1,6 +1,7 @@
 import { TouchableOpacity, View, Image, Text, StyleSheet } from "react-native";
 import Deck from "../components/Deck";
-import { CardData, CardDataType } from "../data/CardData";
+import { CardData } from "../data/CardData";
+import { CardDataType } from "../types/Card";
 
 const SecondCodeExample = () => {
   const renderCard = (item: CardDataType) => {

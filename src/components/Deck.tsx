@@ -1,6 +1,6 @@
 import { View, Animated, PanResponder, Dimensions } from "react-native";
-import { CardDataType } from "../data/CardData";
 import { useRef } from "react";
+import { CardDataType } from "../types/Card";
 
 interface DeckProps {
   data: CardDataType[];
