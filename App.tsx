@@ -1,6 +1,7 @@
 import { SafeAreaView, StyleSheet } from "react-native";
 import FirstCodeExample from "./src/practice/FirstCodeExample";
 import SecondCodeExample from "./src/practice/SecondCodeExample";
+import ThirdCodeExample from "./src/practice/ThirdCodeExample";
 
 export default function App() {
   return (
@@ -9,7 +10,10 @@ export default function App() {
       {/* <FirstCodeExample /> */}
 
       {/* #2 Swipe card code example */}
-      <SecondCodeExample />
+      {/* <SecondCodeExample /> */}
+
+      {/* #3 One time password example */}
+      <ThirdCodeExample />
     </SafeAreaView>
   );
 }
