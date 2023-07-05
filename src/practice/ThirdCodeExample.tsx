@@ -21,7 +21,12 @@ const ThirdCodeExample = () => {
     }
 
     if (stage === "signUp") {
-      return <SignUpForm onBack={() => setStage("auth")} />;
+      return (
+        <SignUpForm
+          onBack={() => setStage("auth")}
+          onNext={() => setStage("logIn")}
+        />
+      );
     }
 
     if (stage === "logIn") {
@@ -34,7 +39,7 @@ const ThirdCodeExample = () => {
     }
 
     if (stage === "main") {
-      return <Text style={styles.text}>Welcome to Awesome Course</Text>;
+      return <Text style={styles.text}>Welcome 🏠 </Text>;
     }
   };
 
