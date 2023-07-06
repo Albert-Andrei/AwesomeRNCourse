@@ -4,6 +4,8 @@ import SecondCodeExample from "./src/practice/SecondCodeExample";
 import ThirdCodeExample from "./src/practice/ThirdCodeExample";
 
 export default function App() {
+  // Initialize Firebase
+
   return (
     <SafeAreaView style={styles.container}>
       {/* #1 First code example */}
