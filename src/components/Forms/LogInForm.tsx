@@ -24,7 +24,7 @@ const LogInForm = ({ onBack, onNext }: LogInFormProps) => {
     setError("");
     setLoading(true);
     try {
-      const { data } = await axios.post(
+      const data = await axios.post(
         "https://verifyonetimepassword-2wujcjhf4q-uc.a.run.app",
         {
           phone: phoneNumber,
